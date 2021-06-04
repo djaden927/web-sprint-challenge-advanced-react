@@ -48,7 +48,7 @@ You will also need to build the two tests in the `CheckoutForm.test.js` file and
  Your finished project must include all of the following requirements.
 
 #### Plant list
-
+<!-- done with plant list -->
   Display a list of the plants from the server. This should be done in the class component `PlantList`. **Unlike other projects, the local server used here can not be accessed through the browser. It is started automatically and without the need for starting a server.js file. Feel free to ignore any messages related to MSW or mock service workers. For this and the rest of your sprint challenges, test the functioning of the server directly through your axios calls.**
 
 * [ ] In the `PlantList` class component, fetch data from the server you now have running - the data can be fetched from `http://localhost:3333/plants.`
@@ -58,6 +58,10 @@ You will also need to build the two tests in the `CheckoutForm.test.js` file and
 #### Shopping Cart
 
   Nothing needs to be done here. You _will_ have to navigate to the cart page in your app so you can go to the checkout form for the next step.
+
+
+
+
 
 #### Checkout Form
 
@@ -136,9 +140,16 @@ test("displays plants in cart", () => {
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Add your answers to the questions within `interview_answers.md` file. These will not be counted as a part of your sprint score but will be helpful for preparing you for your endorsement interview, and enhancing overall understanding.
 
 1. What are the main differences between a stateful and a functional component?
+<!-- stateful components are mostly thought to handle logic, where functional components are thought to render UI, based on that state.  -->
 
 2. When does a componentWillMount function be called? What about a componentWillUpdate?
+<!-- basically the same time as a useEffect with an empty array passed as the second argument. Upon initial render. 
+     componentWillUpdate is called whenever a re-render is in order, such as when the state has been updated.  -->
 
 3. Define stateful logic.
+<!-- logic that is based off of states or manipulates state. -->
 
 4. What are the three step of creating a successful test? What is done in each phase?
+<!-- Arrange   ----- basically set up your test environemnt, what is it that you want to test, etc.
+      Act      ----- What user interaction are you testing. Click a button, fill out a form, etc.
+      Assert   ----- Did the expected behavior happen?-->
